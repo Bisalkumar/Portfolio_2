@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #22110c, #1f0811, #061c24, #072921);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    color: white;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.nav{
+    width: 100%;
+    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+}
+.socialLinks{
+    width: 300px;
+    height: 100px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    margin: 5rem;
+}
+.socialLinks a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.socialLinks a img{
+    width: 45px;
+    height: 45px;
+}
+.nav img {
+    width: 100px;
+}
