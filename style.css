@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
 }
+
 #progress-bar {
   position: fixed;
   top: 0;
@@ -18,6 +19,7 @@ body{
   background-color: red;
   z-index: 9999;
 }
+
 .main {
   position: relative;
   width: 100%;
@@ -92,15 +94,15 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #dedede;
+  background: #f66335;
   scrollbar-track-color: #ffffff;
   border-radius: 10px;
   border-style: solid;
-  border-color: #dedede;
+  border-color: #f66335;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #dedede;
+  background: #f66335;
 }
 
 
