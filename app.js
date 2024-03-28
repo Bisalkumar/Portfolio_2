@@ -1,3 +1,4 @@
+// gsap top scroll animation
 document.addEventListener("DOMContentLoaded", function() {
   var progressBar = document.getElementById('progress-bar');
   window.addEventListener('scroll', function() {
