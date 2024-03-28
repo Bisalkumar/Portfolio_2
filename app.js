@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
       gsap.to(progressBar, {width: scrollPercentage + '%', duration: 0.3, ease: 'power1.out'});
   });
 });
+
+
+
 function handleClick1() {
   document.getElementById('circle').style.top = '20px';
   document.getElementById('cir1').style.top = '20px';
