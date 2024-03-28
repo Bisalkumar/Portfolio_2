@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -24,10 +28,104 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background: linear-gradient(-45deg, #22110c, #1f0811, #061c24, #072921);
+  background-color: #18191d;
+  /* background: linear-gradient(-45deg, #22110c, #1f0811, #061c24, #072921);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite; */
   color: white;
+}
+
+/* navigaiton */
+/* ------------------------------------ */
+
+.navigationUpper{
+  position: fixed;
+  right: 50px;
+  width: 200px;
+  height: fit-content;
+  /* background-color: wheat; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navigation{
+  height: 600px;
+  width: 100px;
+  background-color: red;
+  border-radius: 12px;
+}
+.navigation ul{
+  width: 100%;
+  height: 100%;
+  /* background-color: wheat; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.navigation ul li{
+  list-style: none;
+  /* background-color: white; */
+  
+}
+.navigation .icon{
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.navigation ul li a{
+  text-decoration: none;
+}
+#circle{
+  position: absolute;
+  width: 81px;
+  height: 81px;
+  background-color: white;
+  top: 20px;
+  right: 30px;
+  transition: 0.8s ease;
+  border-radius: 50%;
+  border: 6px solid #18191d;
+  z-index: 999;
+}
+
+.cirleft{
+width:30px;
+height: 30px;
+background-color:transparent;
+position: absolute;
+top: -35px;
+left: 5px;
+border-radius: 50%;
+box-shadow: -9px 8px 0 #18191d;
+}
+.cirright{
+  width:30px;
+height: 30px;
+background-color:transparent;
+position: absolute;
+top: 74px;
+left: 5px;
+border-radius: 50%;
+box-shadow: -9px -10px 0 #18191d;
+}
+.cir1{
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  background-color: #18191d;
+  top: 20px;
+  right: 30px;
+  transition: 0.8s ease;
+  border-radius: 12px 45% 45% 12px;
+  z-index: 998;
 }
 
 @keyframes gradient {
@@ -43,7 +141,9 @@ body {
     background-position: 0% 50%;
   }
 }
-
+/*------------------------------ */
+/* topbar */
+/* ---------------------------------- */
 .nav {
   width: 100%;
   height: 150px;
@@ -79,8 +179,78 @@ body {
 }
 
 
+.menu {
+  width: 5em;
+  height: 30em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2.85em 0;
+  margin: 8% 0 0 3%;
+  background-color: #918282;
+  list-style-type: none;
+  border-radius: 15px;
+}
+.menu-item {
+  display: flex;
+  position: relative;
+  padding: 1em;
+  flex-grow: 1;
+  border-radius: 50%;
+  justify-content: center;
+  z-index: 10;
+}
+.menu-item::before {
+  content: '';
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  transform: scale(0);
+  z-index: -1;
+  margin-top: -.65em;
+  transition: all 1s;
+}
+@keyframes strok {
 
+  100% {
 
+      stroke-dashoffset: 400;
+
+  }
+
+}
+.menu-item.active .icon {
+
+  animation: strok 1.5s reverse;
+  
+}
+.menu-item.active::before {
+  transform: scale(1);
+  background-color: rgb(136, 216, 190);
+}
+.icon {
+  width: 2.6em;
+  height: 2.6em;
+  stroke: white;
+  fill: transparent;
+  stroke-width: 1pt;
+  stroke-miterlimit: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 400;
+}
+.menu-pointer {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5.2em;
+  left: 5.3em;
+  background-color: rgb(136, 216, 190);
+  border-radius: 50%;
+}
 /*--------------------------------------------------------------
 # scrollbar
 --------------------------------------------------------------*/
