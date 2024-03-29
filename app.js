@@ -7,32 +7,32 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function handleClick1() {
-  document.getElementById('circle').style.top = '20px';
-  document.getElementById('cir1').style.top = '20px';
+  document.getElementById('circle').style.top = '18px';
+  document.getElementById('cir1').style.top = '18px';
 }
 function handleClick2() {
-  document.getElementById('circle').style.top="100px";
-  document.getElementById('cir1').style.top="100px";
+  document.getElementById('circle').style.top="81px";
+  document.getElementById('cir1').style.top="81px";
 }
 function handleClick3() {
-  document.getElementById('circle').style.top="180px";
-  document.getElementById('cir1').style.top="180px";
+  document.getElementById('circle').style.top="144px";
+  document.getElementById('cir1').style.top="144px";
 }
 function handleClick4() {
-  document.getElementById('circle').style.top="260px";
-  document.getElementById('cir1').style.top="260px";
+  document.getElementById('circle').style.top="212px";
+  document.getElementById('cir1').style.top="212px";
 }
 function handleClick5() {
-  document.getElementById('circle').style.top="340px";
-  document.getElementById('cir1').style.top="340px";
+  document.getElementById('circle').style.top="275px";
+  document.getElementById('cir1').style.top="275px";
 }
 function handleClick6() {
-  document.getElementById('circle').style.top="420px";
-  document.getElementById('cir1').style.top="420px";
+  document.getElementById('circle').style.top="338px";
+  document.getElementById('cir1').style.top="338px";
 }
 function handleClick7() {
-  document.getElementById('circle').style.top="500px";
-  document.getElementById('cir1').style.top="500px";
+  document.getElementById('circle').style.top="406px";
+  document.getElementById('cir1').style.top="406px";
 }
 
 function handleClick(index) {

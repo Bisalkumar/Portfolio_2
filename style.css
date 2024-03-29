@@ -47,7 +47,7 @@ body{
   align-items: center;
 }
 .navigation{
-  height: 600px;
+  height: 500px;
   width: 80px;
   background: linear-gradient(-45deg, #6b3626, #7e2245, #145c74, #14725b);
   background-size: 400% 400%;
@@ -61,7 +61,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 5px;
   flex-direction: column;
 }
 .navigation ul li{
