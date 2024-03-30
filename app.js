@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+// navigation side bar
 function handleClick1() {
   document.getElementById('circle').style.top = '18px';
   document.getElementById('cir1').style.top = '18px';
@@ -42,3 +44,20 @@ function handleClick(index) {
   });
   icons[index - 1].classList.add('active');
 }
+
+
+// darkmode
+const BUTTON = document.querySelector("button");
+const SYNC = document.querySelector("#sync")
+
+const TOGGLE = () => {
+  const IS_PRESSED = BUTTON.matches("[aria-pressed=true]");
+  if (SYNC.checked)
+    document.body.setAttribute("data-dark-mode", IS_PRESSED ? false : true);
+  BUTTON.setAttribute("aria-pressed", IS_PRESSED ? false : true);
+};
+
+BUTTON.addEventListener("click", TOGGLE);
+
+// ----------------
+
