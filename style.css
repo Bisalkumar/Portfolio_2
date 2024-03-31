@@ -19,8 +19,9 @@ body,html{
   left: 0;
   width: 0%;
   height: 4px;
-  background-color: red;
-  z-index: 9999;
+  background: linear-gradient(-45deg, #f8805b, #f5367f, #2cbff5, #33fd00);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;  z-index: 9999;
 }
 .main {
   position: relative;
@@ -329,19 +330,20 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Julius Sans One', sans-serif;
   margin-bottom:20px;
 }
-.container{
+.container {
   width: 90%;
   height: 100vh;
   padding: 50px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #18191d;
-  position:relative;
-  display:flex;
+  position: relative;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  z-index:2;
+  z-index: 2;
 }
+
 .container .upperCard{
   vertical-align:top;
   width:234px;
@@ -353,7 +355,7 @@ h1, h2, h3, h4, h5, h6{
   background:rgba(49, 49, 49, 0.973) ;
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;  overflow:hidden;
-  display:flex;
+  display: flex;
   justify-content:center;
   align-items:center;
   backdrop-filter:blur(5px);

@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function() {
   var progressBar = document.getElementById('progress-bar');
   window.addEventListener('scroll', function() {
@@ -88,6 +90,9 @@ function handleClick7() {
   document.getElementById('circle').style.top="406px";
   document.getElementById('cir1').style.top="406px";
 }
+
+
+
 
 
 // darkmode
