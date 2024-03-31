@@ -61,7 +61,7 @@ BUTTON.addEventListener("click", TOGGLE);
 
 // ----------------
 // services vanial tilt
-VanillaTilt.init(document.querySelectorAll(".card"),{
+VanillaTilt.init(document.querySelectorAll(".upperCard"),{
   max: 25,
   speed: 400,
   glare: true,
