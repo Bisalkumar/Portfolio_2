@@ -6,8 +6,60 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+function handleClick(index) {
+  var icons = document.querySelectorAll('.navigation .icon span');
+  icons.forEach(function(icon) {
+    icon.classList.remove('active');
+  });
+  icons[index - 1].classList.add('active');
+}
 
-// navigation side bar
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      var sectionIndex = entry.target.getAttribute('data-index');
+      handleClick(parseInt(sectionIndex));
+            updateCirclePosition(parseInt(sectionIndex));
+    }
+  });
+}
+
+var sections = document.querySelectorAll('section');
+var observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+
+function updateCirclePosition(index) {
+  switch(index) {
+    case 1:
+      handleClick1();
+      break;
+    case 2:
+      handleClick2();
+      break;
+    case 3:
+      handleClick3();
+      break;
+    case 4:
+      handleClick4();
+      break;
+    case 5:
+      handleClick5();
+      break;
+    case 6:
+      handleClick6();
+      break;
+    case 7:
+      handleClick7();
+      break;
+    default:
+      break;
+  }
+}
+
+// Functions to update circle position
 function handleClick1() {
   document.getElementById('circle').style.top = '18px';
   document.getElementById('cir1').style.top = '18px';
@@ -35,14 +87,6 @@ function handleClick6() {
 function handleClick7() {
   document.getElementById('circle').style.top="406px";
   document.getElementById('cir1').style.top="406px";
-}
-
-function handleClick(index) {
-  var icons = document.querySelectorAll('.navigation .icon span');
-  icons.forEach(function(icon) {
-    icon.classList.remove('active');
-  });
-  icons[index - 1].classList.add('active');
 }
 
 
