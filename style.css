@@ -146,7 +146,7 @@ box-shadow: -11px -4px 0 #18191d;
   position: absolute;
   width: 100px;
   height: 80px;
-  background-color: #18191d;
+  /* background-color: #18191d; */
   top: 20px;
   right: 30px;
   transition: 0.8s ease;
@@ -317,10 +317,10 @@ box-shadow: -11px -4px 0 #18191d;
   justify-content: center;
 }
 .Home-Section, .resume, .projects, .services{
-  background-color: #18191d;
+  /* background-color: #18191d; */
 }
 .about, .skills, .certificates{
-  background-color: #18191d;
+  /* background-color: #18191d; */
 }
 
 
@@ -332,10 +332,10 @@ h1, h2, h3, h4, h5, h6{
 }
 .container {
   width: 90%;
-  height: 100vh;
+  height: 90vh;
   padding: 50px;
   /* overflow: hidden; */
-  background-color: #18191d;
+  /* background-color: #18191d; */
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -469,6 +469,7 @@ footer {
   padding: 50px 0 30px;
   font-size: 13px;
   line-height: 20px;
+  z-index: 9999999;
 }
 
 .row {
@@ -659,6 +660,22 @@ body {
 	background: var(--bg);
   transition: background var(--speed) var(--easing);
 	font-family: sans-serif, system-ui;
+}
+.cir1{
+  background: var(--bg);
+	font-family: sans-serif, system-ui;
+}
+#circle{
+  border: 6px solid var(--bg);
+}
+
+.cirleft{
+  box-shadow: -12px 4px 0 var(--bg);
+
+}
+.cirright{
+  box-shadow: -11px -4px 0 var(--bg);
+
 }
 
 .toggle__backdrop:first-of-type .clouds path:first-of-type {
